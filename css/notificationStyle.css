@@ -1,0 +1,13 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}

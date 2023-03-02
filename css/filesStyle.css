@@ -1,0 +1,173 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+  display: flex;
+  align-items: flex-start;
+}
+
+section .boxs .files {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(200px, 1fr));
+  gap: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+section .boxs .files .file {
+  background-color: white;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+  padding: 10px;
+}
+
+section .boxs .files .file .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+section .boxs .files .file .top > i {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: var(--gray);
+}
+
+section .boxs .files .file .top > img {
+  width: 64px;
+  margin: 20px 0px 15px;
+}
+
+section .boxs .files .file .top > h3 {
+  margin-bottom: 50px;
+  font-weight: unset;
+  font-size: 16px;
+}
+
+section .boxs .files .file .top > span.uploader {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .files .file .fot {
+  border-top: 1px solid var(--light-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 0px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .statistics {
+  background-color: white;
+  border-radius: 10px;
+  /*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+  margin: 20px 20px 0px 0px;
+  min-width: 260px;
+  padding: 20px;
+}
+
+section .statistics {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 10px 10px 10px 0px;
+  /*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .statistics .top > h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section .statistics .med .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--light-white);
+  padding: 10px;
+  font-size: 14px;
+}
+
+section .statistics .med .card:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+section .statistics .med .card > div {
+  display: flex;
+  align-items: center;
+}
+
+section .statistics .med .card > div > i {
+  width: 40px;
+  height: 40px;
+  background-color: #0075ff33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--blue);
+}
+
+section .statistics .med .card:nth-of-type(2) > div > i {
+  background-color: #22c55e33;
+  color: var(--green);
+}
+section .statistics .med .card:nth-of-type(3) > div > i {
+  background-color: #22c55e33;
+  color: var(--red);
+}
+section .statistics .med .card:nth-of-type(4) > div > i {
+  background-color: #f59e0b33;
+  color: var(--orange);
+}
+
+section .statistics .med .card > div .text span:last-of-type {
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+section .statistics .med .card span.size {
+  color: var(--gray);
+}
+
+section .statistics .fot {
+  padding: 30px 0px 10px 0px; 
+  text-align: center;
+}
+
+section .statistics .fot > a {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+section .statistics .fot > a:hover {
+  background-color: var(--blue-dark);
+}
+
+section .statistics .fot > a i {
+  margin-right: 5px;
+}

@@ -1,0 +1,98 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(300px, 1fr));
+  gap: 20px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+section .boxs .box {
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+/*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .boxs .box .top {
+  position: relative;
+}
+
+section .boxs .box .top img[alt="creator image"] {
+  width: 64px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border-radius: 50%;
+  outline: 2px solid white;
+}
+
+section .boxs .box .top img[alt="course image"] {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+}
+
+section .boxs .box .med {
+  padding: 20px;
+}
+
+section .boxs .box .med h3 {
+  padding-bottom: 20px;
+}
+
+section .boxs .box .med p {
+  color: var(--gray);
+  line-height: 25px;
+}
+
+section .boxs .box .fot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+  border-top: 1px solid var(--light-white);
+}
+
+section .boxs .box .fot a {
+  position: absolute;
+  background-color: var(--blue);
+  transition: 0.3s;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  top: -11px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  font-size: 14px;
+}
+
+section .boxs .box .fot a:hover {
+  background-color: var(--blue-dark);
+}
+
+section .boxs .box .fot .members {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+section .boxs .box .fot .price {
+  color: var(--gray);
+  font-size: 14px;
+}

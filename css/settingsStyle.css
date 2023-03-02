@@ -1,0 +1,356 @@
+:root {
+	--blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+section .boxs .box {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  /*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+  padding: 20px;
+}
+
+section .boxs .box > h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+section .boxs .box > span {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .box .card h4 {
+  font-weight: unset;
+}
+
+section .boxs .box.siteControl .med {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+section label input {
+  display: none;
+}
+
+section label div.togBtn {
+  background-color: #ccc;
+  border-radius: 16px;
+  width: 78px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section label div.togBtn:before {
+  content: "\f00d";
+  font-family: var(--fa);
+  font-weight: 900;
+  background-color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  left: 5px;
+  bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+section label input:checked + div.togBtn:before {
+  content: "\f00c";
+  left: calc(78px - 5px - 24px);
+  color: var(--blue);
+}
+
+section label input:checked + div.togBtn {
+  background-color: var(--blue);
+}
+
+section .boxs .box.siteControl .med div span {
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+section .boxs .box.siteControl .fot form textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: 2px solid var(--light-white);
+  resize: none;
+  min-height: 150px;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+}
+
+section .boxs .box.generalInfo form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section .boxs .box.generalInfo form label {
+  color: var(--gray);
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+section .boxs .box.generalInfo form input {
+  border-radius: 5px;
+  color: #4d4d4d;
+  padding: 8px 10px;
+  border: 1px solid var(--light-white);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+section .boxs .box.generalInfo form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .boxs .box.generalInfo form div input {
+  width: 100%;
+  background-color: var(--page-color);
+  cursor: not-allowed;
+  font-size: 14px;
+}
+
+section .boxs .box.generalInfo form div a {
+  padding: 7px 0 0 10px;
+  color: var(--blue);
+}
+
+section .boxs .box.securityInfo .cards {
+
+}
+
+section .boxs .box.securityInfo .cards .card {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .boxs .box.securityInfo .cards .card:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .boxs .box.securityInfo .cards .card .text span {
+  color: var(--gray);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+section .boxs .box.securityInfo .cards .card .changeBtn {
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+  padding: 4px 10px;
+  transition: 0.3s;
+}
+
+section .boxs .box.securityInfo .cards .card .changeBtn:hover {
+  background-color: var(--blue-dark);
+}
+
+section .boxs .box.securityInfo .cards .card .devicesBtn {
+  border-radius: 5px;
+  background-color: var(--light-white);
+  padding: 4px 10px;
+}
+
+section .boxs .box.socialInfo form {
+  display: flex;
+  flex-direction: column;
+}
+
+section .boxs .box.socialInfo form div.social {
+  background-color: var(--light-white);
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+section .boxs .box.socialInfo form div.social i {
+  color: var(--gray);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--gray);
+  transition: 0.3s;
+}
+
+section .boxs .box.socialInfo form div.social input {
+  padding-left: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+section .boxs .box.socialInfo form div.social:focus-within i {
+  color: black;
+}
+
+section .boxs .box.widgetsControl .checkBoxs {
+  padding: 10px 0px;
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox {
+  padding: 8px 0;
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox input {
+  display: none;
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--light-white);
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox label::after {
+  content: "\f00c";
+  font-family: var(--fa);
+  font-weight: 900;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  transition: 0.3s;
+  transform: scale(0, 1) translateY(50%);
+}
+
+section .boxs .box.widgetsControl .checkBoxs .checkBox input:checked + label::after {
+  transform: scale(1, 1) translateY(50%);
+}
+
+section .boxs .box.backupManager .radios {
+  padding: 10px 0px;
+}
+
+section .boxs .box.backupManager .radios .radio {
+  padding: 8px 0px;
+}
+
+section .boxs .box.backupManager .radios .radio input {
+  display: none;
+}
+
+section .boxs .box.backupManager .radios .radio label {
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+section .boxs .box.backupManager .radios .radio label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  width: 15px;
+  height: 15px;
+}
+
+section .boxs .box.backupManager .radios .radio label::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 50%;
+  transform: scale(0, 1) translateY(50%);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--blue);
+  transition: 0.3s;
+  border: 2px solid white;
+  outline: 1px solid var(--gray);
+}
+
+section .boxs .box.backupManager .radios .radio input:checked + label::after {
+  transform: scale(1, 1) translateY(50%);
+}
+
+section .boxs .box.backupManager .servers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--light-white);
+}
+
+section .boxs .box.backupManager .servers .server {
+  border-radius: 8px;
+  border: 1px solid var(--light-white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+section .boxs .box.backupManager .servers .server i {
+  margin-bottom: 10px;
+}
+
+section .boxs .box.backupManager .servers .server.checked {
+  color: var(--blue);
+  border-color: var(--blue);
+}

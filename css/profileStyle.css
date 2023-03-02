@@ -1,0 +1,273 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs .flexBox .box,
+section .boxs .box {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  /*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .boxs .box.pirsonalInfo {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal {
+  border-right: 1px solid var(--light-white);
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > img.userImg {
+  min-width: 120px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: var(--gray);
+  margin-bottom: 10px;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > img.userImg:hover {
+  background-color: var(--light-white);
+  padding: 5px;
+  border-radius: 10%;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > h3.userName {
+  margin-bottom: 10px;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > span.userLevel {
+  margin-bottom: 10px;
+  color: var(--gray);
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > span.userLevelProgress {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 8px;
+  background-color: var(--light-white);
+  border-radius: 10px;
+  position: relative;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > span.userLevelProgress:before {
+  content: "";
+  width: 80%;
+  height: 8px;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > div.userStars {
+  margin-bottom: 10px;
+  color: var(--orange);
+  font-size: 14px;
+}
+
+section .boxs .box.pirsonalInfo .pirsonal > span.userRating {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+section .boxs .box.pirsonalInfo .info {
+  width: 100%;
+}
+
+section .boxs .box.pirsonalInfo .info .card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+section .boxs .box.pirsonalInfo .info .card:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .boxs .box.pirsonalInfo .info .card h3.title {
+  width: 100%;
+  padding-bottom: 10px;
+  font-weight: unset;
+  color: var(--gray);
+}
+
+section .boxs .box.pirsonalInfo .info .card > div {
+  min-width: 250px;
+  display: flex;
+}
+
+section .boxs .box.pirsonalInfo .info .card > div {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .box.pirsonalInfo .info .card > div span {
+  margin-left: 3px;
+  color: black;
+}
+
+section .boxs .box.pirsonalInfo .info .card label input {
+  display: none;
+}
+
+section .boxs .box.pirsonalInfo .info .card label div.togBtn {
+  background-color: #ccc;
+  border-radius: 10px;
+  min-width: 78px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section .boxs .box.pirsonalInfo .info .card label div.togBtn:before {
+  content: "\f00d";
+  font-family: var(--fa);
+  font-weight: 900;
+  background-color: white;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  left: 5px;
+  bottom: 4px;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+section .boxs .box.pirsonalInfo .info .card label input:checked + div.togBtn:before {
+  content: "\f00c";
+  left: calc(75px - 10px - 5px);;
+  color: var(--blue);
+}
+
+section .boxs .box.pirsonalInfo .info .card label input:checked + div.togBtn {
+  background-color: var(--blue);
+}
+
+section .boxs .flexBox {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+section .boxs .flexBox .mySkills {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+section .boxs .flexBox .mySkills .top h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+section .boxs .flexBox .mySkills .top span {
+  color: var(--gray);
+}
+
+section .boxs .flexBox .mySkills .med {
+  padding: 20px 0;
+}
+
+section .boxs .flexBox .mySkills .med .skills {
+  display: flex;
+  padding: 15px 0;
+}
+
+section .boxs .flexBox .mySkills .med .skills:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .boxs .flexBox .mySkills .med .skills .skill {
+  background-color: var(--light-white);
+  border-radius: 5px;
+  padding: 3px 8px;
+  font-size: 14px;
+}
+
+section .boxs .flexBox .mySkills .med .skills .skill:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+section .boxs .flexBox .latestActivities {
+  padding: 20px;
+  flex-grow: 2;
+}
+
+section .boxs .flexBox .latestActivities .top h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+section .boxs .flexBox .latestActivities .top span {
+  color: var(--gray);
+}
+
+section .boxs .flexBox .latestActivities .med {
+  padding: 20px 0;
+}
+
+section .boxs .flexBox .latestActivities .med .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+section .boxs .flexBox .latestActivities .med .card > div {
+  display: flex;
+  align-items: center;
+}
+
+section .boxs .flexBox .latestActivities .med .card:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .boxs .flexBox .latestActivities .med .card img {
+  max-width: 64px;
+  margin: 10px;
+}
+
+section .boxs .flexBox .latestActivities .med .card .titleAndDiscription h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+section .boxs .flexBox .latestActivities .med .card .titleAndDiscription span {
+  color: var(--gray);
+}
+
+section .boxs .flexBox .latestActivities .med .card .ago {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section .boxs .flexBox .latestActivities .med .card .ago .day {
+  margin-top: 10px;
+  color: var(--gray);
+}

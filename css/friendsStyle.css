@@ -1,0 +1,177 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(300px, 1fr));
+  gap: 20px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+section .boxs .box {
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+/*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .boxs .box .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+section .boxs .box .top .contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section .boxs .box .top .contact i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--light-white);
+  transition: 0.3s;
+  color: #6a6a6a;
+  position: relative;
+  font-size: 14px;
+}
+
+section .boxs .box .top .contact i::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section .boxs .box .top .contact i:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+section .boxs .box .top .contact i a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  z-index: 99;
+  position: relative;
+}
+
+section .boxs .box .top img[alt="friend image"] {
+  width: 100px;
+  border-radius: 50%;
+  margin: 40px 0px 15px 0px
+}
+
+section .boxs .box .top .userName {
+  margin-bottom: 10px;
+}
+
+section .boxs .box .top .job {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .box .med {
+  padding: 15px 0;
+  margin: 20px;
+  border-top: 1px solid var(--light-white);
+  border-bottom: 1px solid var(--light-white);
+  font-size: 15px;
+  position: relative;
+}
+
+section .boxs .box .med .friends {
+  margin-bottom: 10px;
+}
+
+section .boxs .box .med .friends i {
+  margin-right: 3px;
+}
+
+section .boxs .box .med .projects {
+  margin-bottom: 10px;
+}
+
+section .boxs .box .med .projects i {
+  margin-right: 3px;
+}
+
+section .boxs .box .med .articles {
+}
+
+section .boxs .box .med .articles i {
+  margin-right: 3px;
+}
+
+section .boxs .box.vip .med span.vip {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--red);
+  opacity: 20%;
+}
+
+section .boxs .box.vip .med span.vip::before {
+  content: "Vi";
+  position: absolute;
+  right: calc(10px + 22px);
+  bottom: 50%;
+  transform: translate(0px, 50%);
+}
+
+section .boxs .box.vip .med span.vip::after {
+  content: "p";
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  transform: translate(0px, 50%);
+}
+
+section .boxs .box .fot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 20px;
+}
+
+section .boxs .box .fot .joined {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .box .fot .btn {}
+
+section .boxs .box .fot .btn .profile,
+section .boxs .box .fot .btn .remove {
+  background-color: var(--light-white);
+  color: white;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-size: 14px;
+}
+
+section .boxs .box .fot .btn .profile {
+  background-color: var(--blue);
+}
+
+section .boxs .box .fot .btn .remove {
+  background-color: var(--red);
+}
+

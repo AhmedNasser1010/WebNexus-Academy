@@ -1,0 +1,147 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(500px, 1fr));
+  gap: 20px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+section .boxs .box {
+  background-color: white;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+/*box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .boxs .box .top {
+  position: relative;
+}
+
+section .boxs .box .top h3 {
+  font-weight: unset;
+}
+
+section .boxs .box .top p {
+  padding-top: 10px;
+  color: var(--gray);
+}
+
+section .boxs .box .top .date {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+section .boxs .box .top .members {
+  margin-top: 40px;
+}
+
+section .boxs .box .top .members img {
+  width: 40px;
+  border-radius: 50%;
+  outline: 1px solid white;
+  position: relative;
+}
+
+section .boxs .box .top .members img:not(:first-of-type) {
+  margin-left: -20px;
+}
+
+section .boxs .box .top .members img:hover {
+ z-index: 10;
+}
+
+section .boxs .box .med {
+  padding: 15px 0;
+  margin: 20px 0;
+  border-top: 1px solid var(--light-white);
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .boxs .box .med .tags {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section .boxs .box .med .tags span {
+  font-size: 14px;
+  background-color: var(--light-white);
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+section .boxs .box .med .tags span:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+section .boxs .box .fot {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .boxs .box .fot .progress {
+  width: 40%;
+  height: 7px;
+  background-color: var(--light-white);
+  border-radius: 10px;
+  position: relative;
+}
+
+section .boxs .box .fot .progress::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--red);
+  width: 40%;
+  height: 7px;
+  border-radius: 10px;
+}
+
+section .boxs .box.aight .fot .progress::before,
+section .boxs .box.five .fot .progress::before,
+section .boxs .box.two .fot .progress::before {
+  background-color: var(--green);
+  width: 80%;
+}
+section .boxs .box.three .fot .progress::before {
+  background-color: var(--blue);
+  width: 100%;
+}
+section .boxs .box.seven .fot .progress::before,
+section .boxs .box.four .fot .progress::before {
+  background-color: var(--green);
+  width: 60%;
+}
+section .boxs .box.six .fot .progress::before {
+  background-color: var(--red);
+  width: 30%;
+}
+section .boxs .box.nine .fot .progress::before {
+  background-color: var(--red);
+  width: 10%;
+}
+
+section .boxs .box .fot .price {
+  font-size: 14px;
+  color: var(--gray);
+}

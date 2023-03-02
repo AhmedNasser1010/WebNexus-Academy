@@ -1,0 +1,789 @@
+:root {
+	--blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .boxs {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minMax(450px, 1fr));
+	gap: 20px;
+	padding: 10px 20px;
+	overflow: hidden;
+}
+
+section .boxs .box {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	height: 100%;
+	overflow: hidden;
+/*	box-shadow: 0px 0px 5px 3px #e6e6e6;*/
+}
+
+section .boxs .box .top .text h3 {
+	font-size: 24px;
+	padding-bottom: 8px;
+}
+
+section .boxs .box .top .text p {
+	color: var(--gray);
+}
+
+section .boxs .box .top .text span {
+	color: var(--gray);
+}
+
+section .boxs .welcome.box {
+	padding: 0;
+}
+
+section .boxs .welcome.box .top {
+	background-color: var(--light-white);
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: 50px;
+}
+
+section .boxs .welcome.box .top .text {
+
+}
+
+section .boxs .welcome.box .top .text p {
+}
+
+section .boxs .welcome.box .top .welcomePng {
+	width: 200px;
+}
+
+section .boxs .welcome.box .top .avatarPng {
+	position: absolute;
+  left: 20px;
+  bottom: calc(0px - 32px);
+  border-radius: 100%;
+  width: 64px;
+  border: 2px solid white;
+  padding: 2px;
+}
+
+section .boxs .welcome.box .med {
+	padding: 20px;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0px;
+}
+
+section .boxs .welcome.box .med p {
+	text-align: center;
+}
+
+section .boxs .welcome.box .med p span {
+	color: var(--gray);
+	margin-top:10px;
+}
+
+section .boxs .welcome.box .bot {
+	padding: 20px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+section .boxs .welcome.box .bot a {
+	color: white;
+	background-color: var(--blue);
+	border-radius: 5px;
+	padding: 4px 10px;
+	transition: 0.3s;
+}
+
+section .boxs .welcome.box .bot a:hover {
+	background-color: var(--blue-dark);
+}
+
+section .boxs .quickDraft.box .med form {
+	display: flex;
+	flex-direction: column;
+}
+
+section .boxs .quickDraft.box .med form input {
+	background-color: var(--light-white);
+	margin: 10px 0;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+section .boxs .quickDraft.box .med form textarea {
+	background-color: var(--light-white);
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	outline: none;
+	resize: none;
+	min-height: 200px;
+	margin-bottom: 10px;
+}
+
+section .boxs .quickDraft.box .med form .sub {
+	width: fit-content;
+	color: white;
+	background-color: var(--blue);
+	border-radius: 5px;
+	padding: 4px 10px;
+	transition: 0.3s;
+	align-self: end;
+}
+
+section .boxs .quickDraft.box .med form .sub:hover {
+	background-color: var(--blue-dark);
+}
+
+section .yearlyTarget.box .med {
+	margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+section .yearlyTarget.box .med .card {
+	display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+section .yearlyTarget.box .med .card > i {
+	color: var(--blue);
+  background-color: #cce3ff;
+  min-width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+section .yearlyTarget.box .med .card .text {
+	position: relative;
+	width: 100%;
+}
+
+section .yearlyTarget.box .med .card .text p {
+	color: var(--gray);
+	margin-bottom: 10px;
+}
+
+section .yearlyTarget.box .med .card .text p span {
+	color: black;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+section .yearlyTarget.box .med .card.two > i {
+	background-color: #fdecce;
+	color: var(--orange);
+}
+
+section .yearlyTarget.box .med .card.three > i {
+	background-color: #d3f3df;
+	color: var(--green);
+}
+
+section .yearlyTarget.box .med .card .text .prog {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: var(--light-white);
+	width: 100%;
+	height: 4px;
+}
+
+section .yearlyTarget.box .med .card .text .prog::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 80%;
+	height: 4px;
+	background-color: var(--blue);
+}
+
+section .yearlyTarget.box .med .card.two .text .prog::before {
+	background-color: var(--orange);
+	width: 55%;
+}
+
+section .yearlyTarget.box .med .card.three .text .prog::before {
+	background-color: var(--green);
+	width: 75%;
+}
+
+section .yearlyTarget.box .med .card .text .prog .percentage {
+	position: absolute;
+  bottom: 15px;
+  left: calc(80% - 20px);
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 23px;
+}
+
+section .yearlyTarget.box .med .card.two .text .prog .percentage {
+	background-color: var(--orange);
+	left: calc(55% - 20px);
+}
+
+section .yearlyTarget.box .med .card.three .text .prog .percentage {
+ background-color: var(--green);
+ left: calc(75% - 20px);
+}
+
+section .yearlyTarget.box .med .card .text .prog .percentage::before {
+	content: "";
+  position: absolute;
+  top: 22px;
+  left: 11px;
+  border: 8px solid #0075ff;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+section .yearlyTarget.box .med .card.two .text .prog .percentage::before {
+	border-top-color: var(--orange);
+}
+
+section .yearlyTarget.box .med .card.three .text .prog .percentage::before {
+	border-top-color: var(--green);
+}
+
+section .ticketsStatistics .med {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 0;
+	gap: 10px;
+}
+
+section .ticketsStatistics .med .card {
+	width: calc(50% - 10px);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+	border: 2px solid #eee;
+	padding: 20px;
+	text-align: center;
+}
+
+section .ticketsStatistics .med .card .text {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+section .ticketsStatistics .med .card .text span {
+	color: var(--gray);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+section .ticketsStatistics .med .card i {
+	align-self: center;
+	margin-bottom: 10px;
+	color: var(--orange);
+}
+
+section .ticketsStatistics .med .card.two i {
+	color: var(--blue);
+}
+
+section .ticketsStatistics .med .card.three i {
+ color: var(--green);
+}
+
+section .ticketsStatistics .med .card.four i {
+	color: var(--red);
+}
+
+section .ticketsStatistics .med .card .text span {
+	margin-top: 10px;
+}
+
+section .latestNews .med {
+	display: flex;
+	flex-direction: column;
+}
+
+section .latestNews .med .card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+
+section .latestNews .med .card:not(:last-of-type) {
+	border-bottom: 2px solid #eee;
+}
+
+
+
+section .latestNews .med .card .text img {
+	width: 100px;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+section .latestNews .med .card .text {
+	display: flex;
+	color: black;
+	align-items: center;
+}
+
+section .latestNews .med .card .text span {
+	color: var(--gray);
+	margin-top: 10px;
+}
+
+section .latestNews .med .card .since {
+	background-color: var(--light-white);
+  border-radius: 10px;
+  padding: 5px 10px;
+  height: fit-content;
+  font-size: 13px;
+}
+
+section .latesTasks .med {
+	display: flex;
+	flex-direction: column;
+}
+
+section .latesTasks .med .card {
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section .latesTasks .med .card i {
+	transition: 0.3s;
+}
+
+section .latesTasks .med .card:not(:last-of-type) {
+	border-bottom: 2px solid #eee;
+}
+
+section .latesTasks .med .card .text h4 span {
+	color: var(--gray);
+	margin-top: 5px;
+}
+
+section .latesTasks .med .card.done .text {
+	text-decoration: line-through;
+  opacity: 50%;
+}
+
+section .latesTasks .med .card.done i {
+	opacity: 50%;
+}
+
+section .latesTasks .med .card i:hover {
+	color: var(--red);
+}
+
+section .topSearchItem .med {
+	display: flex;
+  flex-direction: column;
+}
+
+section .topSearchItem .med .title,
+section .topSearchItem .med .card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section .topSearchItem .med .title {
+	color: var(--gray);
+}
+
+section .topSearchItem .med .title {
+	margin-top: 17px;
+}
+
+section .topSearchItem .med .card {
+	margin: 17px 0;
+}
+
+section .topSearchItem .med .card .count {
+	text-align: center;
+  width: 45px;
+  background-color: var(--light-white);
+  border-radius: 5px;
+  padding: 3px 0;
+}
+
+section .latestUploads .med {
+	display: flex;
+	flex-direction: column;
+}
+
+section .latestUploads .med .card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14px 0;
+}
+
+section .latestUploads .med .card:not(:last-of-type) {
+	border-bottom: 2px solid #eee;
+}
+
+section .latestUploads .med .card img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+section .latestUploads .med .card .text {
+	display: flex;
+}
+
+section .latestUploads .med .card .text h4 span {
+	color: var(--gray);
+	margin-top: 5px;
+}
+
+section .latestUploads .med .card .size {
+	text-align: center;
+  width: 55px;
+  background-color: var(--light-white);
+  border-radius: 5px;
+  padding: 3px 0;
+}
+
+section .lastProjectProgress .med {
+	position: relative;
+	height: 100%;
+}
+
+section .lastProjectProgress .med .prog {
+	padding: 15px 10px;
+	margin-left: 20px;
+	position: relative;
+}
+
+section .lastProjectProgress .med .prog::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: 2px solid #0075ff;
+  border: 2px solid white;
+}
+
+section .lastProjectProgress .med .prog.done::before {
+	background-color: var(--blue);
+}
+
+section .lastProjectProgress .med .prog.doing::before {
+	animation: 0.8s ease 0s infinite alternate none running changeColor;
+}
+
+@keyframes changeColor {
+	0% {
+		background-color: white;
+	}
+	100% {
+		background-color: var(--blue);
+	}
+}
+
+section .lastProjectProgress .med .prog:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+  width: 2px;
+  height: 26px;
+  background-color: var(--blue);
+}
+
+section .lastProjectProgress img {
+	width: 160px;
+	opacity: 25%;
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+}
+
+section .reminders .med .card {
+	margin: 25px 0;
+}
+
+section .reminders .med .card .text span {
+	color: var(--gray);
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+section .reminders .med .card .text {
+	position: relative;
+	margin-left: 40px;
+}
+
+section .reminders .med .card .text::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 25%;
+  left: -45px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+
+section .reminders .med .card.two .text::before {
+ background-color: var(--green);
+}
+section .reminders .med .card.three .text::before {
+	background-color: var(--orange);
+}
+section .reminders .med .card.four .text::before {
+	background-color: var(--red);
+}
+
+section .reminders .med .card .text::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  background-color: var(--blue);
+}
+
+section .reminders .med .card.two .text::after {
+	background-color: var(--green);
+}
+section .reminders .med .card.three .text::after {
+	background-color: var(--orange);
+}
+section .reminders .med .card.four .text::after {
+	background-color: var(--red);
+}
+
+
+section .latestPost h3 {
+	font-size: 24px;
+  padding-bottom: 20px;
+}
+
+section .latestPost .top {
+	display: flex;
+	align-items: center;
+}
+
+section .latestPost .top img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+section .latestPost .top .text h4 {
+	margin-bottom: 5px;
+}
+
+section .latestPost .med {
+	border-top: 1px solid var(--light-white);
+	border-bottom: 1px solid var(--light-white);
+	padding: 20px 0;
+	margin: 20px 0;
+	line-height: 30px;
+}
+
+section .latestPost .fot {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--gray);
+}
+
+section .socialMediaStats .med {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+
+section .socialMediaStats .med .card {
+	background-color: rgb(29 161 242 / 20%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section .socialMediaStats .med .card.two {
+	background-color: rgb(24 119 242 / 20%);
+}
+
+section .socialMediaStats .med .card.three {
+	background-color: rgb(255 0 0 / 20%);
+}
+
+section .socialMediaStats .med .card.four {
+	background-color: rgb(0 119 181 / 20%);
+}
+
+section .socialMediaStats .med .card > div {
+	display: flex;
+	align-items: center;
+}
+
+section .socialMediaStats .med .card div i,
+section .socialMediaStats .med .card a {
+	background-color: #1da1f2;
+	color: white;
+}
+
+section .socialMediaStats .med .card.two div i,
+section .socialMediaStats .med .card.two a {
+	background-color: #1da1f2;
+}
+
+section .socialMediaStats .med .card.three div i,
+section .socialMediaStats .med .card.three a {
+	background-color: #ff0000;
+}
+
+section .socialMediaStats .med .card.four div i,
+section .socialMediaStats .med .card.four a {
+	background-color: #0077b5;
+}
+
+section .socialMediaStats .med .card div i {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+section .socialMediaStats .med .card a {
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: white;
+}
+
+section .projects {
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px 20px 20px 20px;
+	padding: 20px;
+	max-width: 100%;
+}
+
+section .projects h3 {
+	font-size: 24px;
+  padding-bottom: 20px;
+}
+
+section .projects .resp-table {
+	overflow-x: auto;
+}
+
+section .projects table {
+	border-spacing: 0;
+	width: 100%;
+	min-width: 1000px;
+}
+
+section .projects table thead {
+	background-color: var(--light-white);
+}
+
+section .projects table thead tr {}
+
+section .projects table thead tr td {
+	padding: 20px;
+	font-weight: bold;
+}
+
+section .projects table tbody {
+}
+
+section .projects table tbody tr {
+	transition: 0.3s;
+}
+
+section .projects table tbody tr:hover td {
+	background-color: #fafafa;
+}
+
+section .projects table tbody tr td {
+	padding: 20px;
+	border-bottom: 1px solid var(--light-white);
+	border-right: 1px solid var(--light-white);
+}
+
+section .projects table tbody tr td:first-of-type {
+	border-left: 1px solid var(--light-white);
+}
+
+section .projects table tbody tr .team {}
+
+section .projects table tbody tr .team img {
+	width: 32px;
+	border-radius: 50%;
+	outline: 2px solid white;
+}
+
+section .projects table tbody tr .team img:not(:first-of-type) {
+	margin-left: -20px;
+}
+
+section .projects table tbody tr td .status {
+	color: white;
+	border-radius: 5px;
+	padding: 3px 10px;
+	font-size: 13px;
+	width: fit-content;
+}
+
+section .projects table tbody tr td .status.pending {
+	background-color: var(--orange);
+}
+
+section .projects table tbody tr td .status.inProgress {
+	background-color: var(--blue);
+}
+
+section .projects table tbody tr td .status.completed {
+	background-color: var(--green);
+}
+
+section .projects table tbody tr td .status.rejected {
+	background-color: var(--red);
+}

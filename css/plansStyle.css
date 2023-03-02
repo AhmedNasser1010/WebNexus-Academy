@@ -1,0 +1,136 @@
+:root {
+  --blue:  #0075ff;
+  --blue-dark:  #0d69d5;
+  --orange:  #f59e0b;
+  --green:  #22c55e;
+  --red:  #f44336;
+  --gray:  #888;
+  --light-white: #eee;
+  --page-color: #f1f5f9;
+  --fa: "Font Awesome 6 Free";
+  --f-open-sans: 'Open Sans', sans-serif;
+  --f-cairo: 'Cairo', sans-serif;
+}
+
+section .plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section .plans .plan {
+  background-color: white;
+  padding: 20px;
+  flex-grow: 1;
+  min-width: 350px;
+}
+
+section .plans .plan .top {
+  background-color: var(--red);
+  border: 3px solid white;
+  outline: 3px solid var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+section .plans .plan.free .top {
+  background-color: var(--green);
+  outline-color: var(--green);
+}
+
+section .plans .plan.basic .top {
+  background-color: var(--blue);
+  outline-color: var(--blue);
+}
+
+section .plans .plan.premium .top {
+  background-color: var(--orange);
+  outline-color: var(--orange);
+}
+
+section .plans .plan .top .price {
+  font-size: 40px;
+  position: relative;
+}
+
+section .plans .plan .top .price::before {
+  content: "$";
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  color: white;
+  font-size: 25px;
+}
+
+section .plans .plan .med .feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+section .plans .plan .med .feature div {
+  display: flex;
+  align-items: center;
+}
+
+section .plans .plan .med {
+  padding: 20px 0;
+}
+
+section .plans .plan .med .feature:not(:last-of-type) {
+  border-bottom: 1px solid var(--light-white);
+}
+
+section .plans .plan .med .feature div i {
+  color: var(--red);
+  margin-right: 3px;
+}
+
+section .plans .plan .med .feature div i.yes {
+  color: var(--green);
+}
+section .plans .plan .med .feature div i.yes::before {
+  content: "\f00c";
+}
+
+section .plans .plan .med .feature div span {
+  font-size: 14px;
+}
+
+section .plans .plan .med .feature i {
+  color: var(--gray);
+}
+
+section .plans .plan .fot a {
+ color: white;
+ background-color: var(--red);
+ border-radius: 5px;
+ padding: 0px 10px;
+ font-size: 14px;
+}
+
+section .plans .plan.free .fot a {
+  background-color: var(--green);
+}
+
+section .plans .plan.basic .fot a {
+  background-color: var(--blue);
+}
+
+section .plans .plan.premium .fot a {
+  background-color: var(--orange);
+}
+
+section .plans .plan .fot span {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+}
