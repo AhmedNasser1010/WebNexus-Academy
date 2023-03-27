@@ -1,0 +1,53 @@
+@media (max-width: 820px) {
+	section .boxs {
+		grid-template-columns: repeat(auto-fill, minMax(350px, 1fr)) !important;	
+	}
+	section .projects {
+		max-width: 350px !important;
+	}
+	section .box.welcome .top img.welcomePng {
+		display: none;
+	}
+	section .box.welcome .top .text p {
+		text-align: center;
+	}
+	section .box.welcome .top img.avatarPng {
+		left: 50% !important;
+    transform: translateX(-50%);
+	}
+	section .boxs .welcome.box .med {
+		flex-direction: column;
+	}
+	section .boxs .welcome.box .med p:not(:last-of-type) {
+		margin-bottom: 20px;
+	}
+	section .ticketsStatistics .med {
+		flex-direction: column;
+	}
+	section .ticketsStatistics .med .card {
+		width: 100%;
+		margin: 5px 0;
+	}
+	section .boxs .box.latestNews .top .text h3 {
+		text-align: center;
+	}
+	section .latestNews .med .card {
+		flex-direction: column;
+	}
+	section .latestNews .med .card .text {
+		flex-direction: column;
+    text-align: center;
+	}
+	section .latestNews .med .card .text img {
+		margin-bottom: 5px;
+	}
+	section .latestNews .med .card .text span {
+		margin-bottom: 10px;
+	}
+	section .latestNews .med .card:not(:last-of-type) {
+		border-width: 1px;
+	}
+	section .lastProjectProgress img {
+		display: none;
+	}
+}

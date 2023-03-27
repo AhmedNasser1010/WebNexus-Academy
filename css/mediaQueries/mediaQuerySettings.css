@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+	section .boxs {
+		grid-template-columns: repeat(auto-fill, minMax(310px, 1fr));
+		padding: 10px;
+	}
+	section .boxs .box.backupManager .servers {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,14 @@
+@media (max-width: 500px) {
+	section .boxs .box .med p {
+		font-size: 14px !important;
+	}
+	section .boxs .box .med h3 {
+		font-size: unset;
+	}
+}
+
+@media (max-width: 820px) {
+	section .boxs {
+		grid-template-columns: repeat(auto-fill, minMax(200px, 1fr));
+	}
+}

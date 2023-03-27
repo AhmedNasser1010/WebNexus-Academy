@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+	section .boxs {
+		flex-direction: column;
+		align-items: center;
+	}
+	section .boxs .files {
+		grid-template-columns: repeat(auto-fill, minMax(310px, 1fr));
+		padding: 10px;
+		order: 2;
+	}
+	section .boxs .statistics {
+		order: 1;
+		min-width: unset;
+		width: 310px;
+		padding: 10px;
+		margin: 10px 0px !important;
+	}
+}

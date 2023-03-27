@@ -1,0 +1,36 @@
+@media (max-width: 500px) {
+  .page aside {
+    width: 60px;
+  }
+  .page aside nav {
+    left: 10px !important;
+    top: 50px !important;
+  }
+  .page aside .logo {
+    left: 5px;
+    width: fit-content;
+  }
+  .page aside .logo  h1 {
+    font-size: 13px !important;
+  }
+  .page aside .logo  h1::before {
+    display: none;
+  }
+  .page aside .logo  h1::after {
+    display: none;
+  }
+  .page aside nav ul li {
+    padding: 0px;
+    text-align: center !important;
+    font-size: 14px;
+  }
+  .page aside nav ul li a {
+    padding: 10px !important;
+  }
+  .page aside nav ul li a span {
+    display: none;
+  }
+  .page aside nav ul li a i {
+    width: 100% !important;
+  }
+}

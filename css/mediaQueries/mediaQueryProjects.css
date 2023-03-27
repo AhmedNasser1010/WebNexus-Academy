@@ -1,0 +1,39 @@
+@media (max-width: 500px) {
+	section .boxs {
+		grid-template-columns: repeat(auto-fill, minMax(310px, 1fr));
+		padding: 10px 10px;
+	}
+	section .boxs .box .top h3 {
+		font-size: 15px;
+    font-weight: 500;
+	}
+	section .boxs .box .top .date {
+		font-size: 13px;
+	}
+	section .boxs .box .top p {
+		font-size: 14px;
+	}
+	section .boxs .box .top .members img {
+		width: 35px;
+	}
+	section .boxs .box .top .members img:not(:first-of-type) {
+		margin-left: -15px;
+	}
+	section .boxs .box .med .tags {
+		flex-direction: column;
+	}
+	section .boxs .box .med .tags span {
+		width: fit-content;
+	}
+	section .boxs .box .med .tags span:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+	section .boxs .box .fot {
+		flex-direction: column;
+    text-align: center;
+	}
+	section .boxs .box .fot .progress {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+	section .plans {
+		padding: 10px;
+	}
+	section .plans .plan {
+		min-width: unset;
+		width: 310px;
+	}
+}
