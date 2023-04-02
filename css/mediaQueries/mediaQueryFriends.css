@@ -1,4 +1,7 @@
 @media (max-width: 500px) {
+	.page aside {
+		width: unset !important;
+	}
 	section .boxs {
 		grid-template-columns: repeat(auto-fill, minMax(310px, 1fr));
 		padding: 10px;

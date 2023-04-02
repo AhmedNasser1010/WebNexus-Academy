@@ -1,4 +1,10 @@
 @media (max-width: 500px) {
+  .page {
+    grid-template-columns: auto !important;
+  }
+  .page section .boxs {
+    grid-template-columns: auto !important;
+  }
   .page aside {
     width: 60px;
   }
@@ -32,5 +38,8 @@
   }
   .page aside nav ul li a i {
     width: 100% !important;
+  }
+  .page header nav form input {
+    font-size: 10px;
   }
 }

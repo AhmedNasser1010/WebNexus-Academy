@@ -102,7 +102,7 @@ input {
 .page {
   display: grid;
   height: 100vh;
-  grid-template-columns: minmax(60px, 220px);;
+  grid-template-columns: minmax(60px, 220px);
   grid-template-rows: auto 1fr;
 }
 
@@ -197,6 +197,7 @@ input {
   margin-left: 8px;
   transition: var(--normal-transition);
   font-size: 13px;
+  transition: 0.3s;
 }
 
 .page header nav form input:focus {

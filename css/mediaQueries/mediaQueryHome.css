@@ -1,3 +1,9 @@
+@media (max-width: 500px) {
+	section .projects {
+		width: 293px;
+	}
+}
+
 @media (max-width: 820px) {
 	section .boxs {
 		grid-template-columns: repeat(auto-fill, minMax(350px, 1fr)) !important;	
@@ -49,5 +55,11 @@
 	}
 	section .lastProjectProgress img {
 		display: none;
+	}
+	section .lastProjectProgress .med .prog {
+		font-size: 13px;
+	}
+	section .socialMediaStats .med .card {
+		font-size: 13px;
 	}
 }
