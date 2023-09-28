@@ -115,18 +115,11 @@ input {
   overflow: hidden;
 }
 
-.page aside .logo {
-  position: fixed;
-  -webkit-backface-visibility: hidden;
-  top: 20px;
-  left: calc(110px - 35px);
-  width: 70px;
-}
-
-.page aside .logo  h1 {
-  font-size: 20px;
-  margin: 0px;
-  text-align: center;
+.page aside .logo img {
+	position: fixed;
+	max-width: 200px;
+  left: 10px;
+	pointer-events: none;
 }
 
 .page aside nav {
